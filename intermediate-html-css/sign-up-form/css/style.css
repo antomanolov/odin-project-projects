@@ -12,15 +12,15 @@ input {
 }
 
 p {
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .pink-text {
     color: pink;
 }
 
-.form-text {
-    width: 900px;
+.form-text-real {
+    width: 800px;
 }
 .form-text > *:first-child
  {
@@ -29,7 +29,7 @@ p {
 }
 
 .you-want-it {
-    margin-left: 140px;
+    
     margin-top: 30px;
 }
 .form-container > h1 {
@@ -38,13 +38,13 @@ p {
 
 
 .image-form {
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     display: flex;
 }
 
 .image {
-    width: 40%;
+    width: 40vw;
     height: 100vh;
     
     background: url('../img/meric-dagli-7NBO76G5JsE-unsplash\ \(1\).jpg'); 
@@ -73,11 +73,6 @@ p {
     
 }
 
-.form {
-    width: 70%;
-    
-    
-}
 
 .credits{
     position: fixed;
@@ -135,4 +130,14 @@ a {
 
 .log {
     color: pink;
+}
+
+/* .form-background {
+    
+    background-color: black;
+    
+} */
+
+.form-text {
+    width: 60%;
 }
