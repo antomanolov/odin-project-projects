@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 36px;
+}
+
+.pink-text {
+    color: pink;
+}
+
+.form-text {
+    width: 900px;
+}
+.form-text > *:first-child
+ {
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.you-want-it {
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.form-container > h1 {
+    margin-bottom: 10px;
+}
+
+
+.image-form {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.image {
+    width: 40%;
+    height: 100vh;
+    
+    background: url('../img/meric-dagli-7NBO76G5JsE-unsplash\ \(1\).jpg'); 
+    
+}
+
+.form-container {
+    margin-top: 50px;
+    
+    
+}
+
+.logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    color: #000000;
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+    background-color: rgb(255, 255, 255, 0.6);
+}
+
+.logo-name img {
+    width: 140px;
+    
+}
+
+.form {
+    width: 70%;
+    
+    
+}
+
+.credits{
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 10%;
+    background-color:rgb(255, 255, 255, 0.9);
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.form-container {
+    margin-left: 200px;
+    
+}
+
+
+
+.journey-form {
+    display: flex;
+    gap:  20px;
+    
+    width: 700px;
+    flex-wrap: wrap;
+}
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="image-form">
+        <div class="image">
+            <div class="logo-name">
+                <img src="img/japan.png" alt="" class="logo">
+                <h1>JOURNEY</h1>
+            </div>
+            <div class="credits">
+                Photo by <a
+                    href="https://unsplash.com/@meric?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Meriç
+                    Dağlı</a> on <a
+                    href="https://unsplash.com/photos/7NBO76G5JsE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+                <div>
+                    Icon by
+                    <a href="https://www.flaticon.com/free-icons/sakura" title="sakura icons">Sakura icons created by
+                        Paul J. - Flaticon</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-text">
+            <p>
+                This is not real online service! But still if you want travel to Japan
+                now is your chance! <span class="pink-text">Don't miss it, we have sakura, anime and cute girls!</span>
+            <p>
+            <p class="you-want-it">You know you <span class="pink-text">want</span> it!</p>
+            <div class="form-container">
+                <h1>Let's do this </h1>
+                <form class="journey-form" id="journey-form">
+                    
+                    <div class="input">
+                        <label for="name">FIRST NAME</label>
+                        <input type="text" id="name" required>
+
+                    </div>
+                    <div class="input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="userlastname">
+                    </div>
+                    <div class="input">
+                        <label for="mail">EMAIL</label>
+                        <input type="email" name="usermail" id="mail">
+                    </div>
+                    <div class="input">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="number" name="userphone" id="phone">
+                    </div>
+                    <div class="input">
+                        <label for="pass1">PASSWORD</label>
+                        <input type="password" name="userpass" id="pass1">
+                        <p class="error"></p>
+                    </div>
+                    <div class="input">
+                        <label for="repeatpass">CONFIRM PASSWORD</label>
+                        <input type="password" name="user-repeat-pass" id="repeatpass">
+                    </div>
+                </form>
+                
+            </div>
+
+            <button type="submit" form="journey-form" value="submit">Submit</button>
+            <h2>Already have an account? Log in</h2>
+        </div>
+        
+    </div>
+
+
+
+</body>
+
+</html>
