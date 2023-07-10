@@ -25,11 +25,11 @@ p {
 .form-text > *:first-child
  {
     margin-top: 100px;
-    margin-left: 200px;
+    margin-left: 140px;
 }
 
 .you-want-it {
-    margin-left: 200px;
+    margin-left: 140px;
     margin-top: 30px;
 }
 .form-container > h1 {
@@ -93,7 +93,7 @@ p {
 }
 
 .form-container {
-    margin-left: 200px;
+    margin-left: 140px;
     
 }
 
@@ -108,3 +108,32 @@ p {
 }
 
 
+button {
+    margin-top: 40px;
+    margin-left: 150px;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid pink;
+    background-color: pink;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #D3D3D3;
+}
+
+.acc-text {
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+button:active {
+    background-color: #FF4FA7;
+}
+
+a {
+    text-decoration: none;
+    color: #FF4FA7;
+}
+
+.log {
+    color: pink;
+}
