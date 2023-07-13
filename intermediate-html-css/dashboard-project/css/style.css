@@ -1,3 +1,8 @@
+:root {
+    --main-color: #eee3fa;
+    --secondary-color: #DEFDE0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,12 +37,12 @@
 
 .main-content {
     grid-area: main-content;
-    background-color: #eee3fa;
+    background-color: var(--main-color);
 }
 
 .dashboard {
     position: relative;
-    background-color: #DEFDE0;
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -53,6 +58,8 @@ logo3 p {
 .top-avatar {
     width: 2.2rem;
 }
+
+
 
 .logo2 img, 
 .logo3 img, 
@@ -108,9 +115,9 @@ input {
     width: 800px;
     height: 28px;
     border-radius: 10px;
-    border: 1px solid #eee3fa;
-    background-color: #eee3fa;
-    box-shadow: 1px 1px 1px 1px #dedede;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    box-shadow: 1px 1px 1px 1px var(--main-color);
 }
 
 .top {
@@ -138,4 +145,53 @@ input {
     margin-right: 50px;
     font-size: 1.25rem;
     font-weight: 700;
+}
+.top-avatar{
+    margin: 0 auto;
+}
+
+.top-avatar-border {
+    display: grid;
+    align-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    
+}
+
+.bottom-avatar {
+    width: 3.5rem;
+    margin: 0 auto;
+}
+
+.bottom-avatar-border {
+    display: grid;
+    align-content: center;
+    border: 1px solid var(--main-color);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--main-color);
+    
+}
+
+.bottom {
+    display: grid;
+    margin-top: 10px;
+    margin-left: 50px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.bottom-avatar-info {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+}
+
+.flex-text p + p {
+    font-size: 20px;
 }
