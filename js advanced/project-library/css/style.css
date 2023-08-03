@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Old Standard TT', serif;
+}
+
+
+body {
+    width: 100vw;
+}
+
+
+.header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: #E2E1E5;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.first-input:focus {
+    outline: 2px solid orange;
+    border: 2px solid orange;
+
+}
+
+.first-input {
+    width: 250px;
+    margin: 0 auto;
+    height: 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+.label-checker {
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: space-evenly;
+}
+
+#read {
+    width: 40px;
+}
+
+.form {
+    padding: 20px;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    background: #E2E1E5;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+#bookform {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+}
+
+
+.form h3 {
+    margin-bottom: 10px;
+}
+
+.form button {
+    margin-top: 10px;
+    width: 4.7rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.add-book {
+    display: grid;
+    grid-template-columns: 600px 250px;
+
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    
+}
+
+.add-book img {
+    align-self: center;
+    width: 40px;
+    cursor: pointer;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.book h2{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+.book h3{
+    font-size: 1.5rem;
+    margin-left: 4rem;
+}
+
+.book-cards {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+
+}
+
+.buttons-pages {
+    padding: 0 1.1rem;
+    display: flex;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    gap: 3rem;
+}
+
+.pages {
+    position: relative;
+    top: -7rem;
+    left: 18rem;
+    color: gray;
+}
+
+.btn {
+    width: 7rem;
+    height: 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: black;
+    color: white;
+
+}
+
+.read-btn {
+    background-color: white;
+}
+
+.btn:active {
+    background-color: gray;
+}
