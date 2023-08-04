@@ -27,20 +27,22 @@
 
     <div class="form">
         <h3>Please add something to the library</h3>
-        <form action="" id="bookform">
-            <input type="text" id="title" placeholder="Book Title" class="first-input" required>
-            <input type="text" id="author" placeholder="Book Author" class="first-input" required>
-            <input type="number" name="" id="pagesCnt" placeholder="Page Count" class="first-input" required>
-
+        <form id="bookform">
+            <input type="text" id="title" placeholder="Book Title" class="first-input" data-class="" >
+            <p class="err-booktitle err"></p>
+            <input type="text" id="author" placeholder="Book Author" class="first-input">
+            <p class="err-author err"></p>
+            <input type="number" name="" id="pagesCnt" placeholder="Page Count" class="first-input">
+            <p class="err-pages err"></p>
             <label for="read" class="label-checker">Read
                 <input type="checkbox" name="read" id="read">
             </label>
         </form>
-        <button type="submit" form="bookform">Submit</button>
+        <button type="submit" form="bookform" class="submit-btn">Submit</button>
     </div>
 
     <div class="book-cards">
-        <div class="book">
+        <!-- <div class="book">
             <div class="author-title">
                 <h2>The hobbit</h2>
                 <h3>by J.R.R. Tolkien</h3>
@@ -57,74 +59,7 @@
 
             </div>
         </div>
-        <div class="book">
-            <div class="author-title">
-                <h2>The hobbit</h2>
-                <h3>by J.R.R. Tolkien</h3>
-            </div>
-
-            <div class="buttons-pages">
-                <div class="pages">
-                    <p>Pages: 289</p>
-                </div>
-                <div class="buttons">
-                    <button class="delete-btn btn">Delete</button>
-                    <button class="read-btn btn">Read/Unred</button>
-                </div>
-
-            </div>
-        </div>
-        <div class="book">
-            <div class="author-title">
-                <h2>The hobbit</h2>
-                <h3>by J.R.R. Tolkien</h3>
-            </div>
-
-            <div class="buttons-pages">
-                <div class="pages">
-                    <p>Pages: 289</p>
-                </div>
-                <div class="buttons">
-                    <button class="delete-btn btn">Delete</button>
-                    <button class="read-btn btn">Read/Unred</button>
-                </div>
-
-            </div>
-        </div>
-        <div class="book">
-            <div class="author-title">
-                <h2>The hobbit</h2>
-                <h3>by J.R.R. Tolkien</h3>
-            </div>
-
-            <div class="buttons-pages">
-                <div class="pages">
-                    <p>Pages: 289</p>
-                </div>
-                <div class="buttons">
-                    <button class="delete-btn btn">Delete</button>
-                    <button class="read-btn btn">Read/Unred</button>
-                </div>
-
-            </div>
-        </div>
-        <div class="book">
-            <div class="author-title">
-                <h2>The hobbit</h2>
-                <h3>by J.R.R. Tolkien</h3>
-            </div>
-
-            <div class="buttons-pages">
-                <div class="pages">
-                    <p>Pages: 289</p>
-                </div>
-                <div class="buttons">
-                    <button class="delete-btn btn">Delete</button>
-                    <button class="read-btn btn">Read/Unred</button>
-                </div>
-
-            </div>
-        </div>
+         -->
     </div>
 
 
