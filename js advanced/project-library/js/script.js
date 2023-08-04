@@ -1,13 +1,15 @@
-function Book(title, author, pages, read) {
+function Book(title, author, pages, read=false) {
     this.title = title
     this.author = author
     this.pages = pages
-    this.read = false
+    this.read = read
 
 
 }
 let library = [];
-const bookCards = document.querySelector('.book-cards')
+let dataNum = 0;
+
+const bookCards = document.querySelector('.book-cards');
 
 const bookTitle = document.querySelector('#title');
 const bookAuthor = document.querySelector('#author');
@@ -72,10 +74,10 @@ addBook.addEventListener('click', () => {
 function makeBook(title, author, pages, isRead) {
     let book = new Book(title, author, pages, isRead)
     library.push(book)
-    loadBooks(book)
+    loadBook(book)
 }
 
-function loadBooks(obj) {
+function loadBook(obj) {
     let bookDiv = document.createElement('div')
 
     let authorTitleDiv = document.createElement('div')
@@ -100,14 +102,38 @@ function loadBooks(obj) {
     pagesP.textContent = `Pages: ${obj.pages}`
     buttonsDiv.classList.add('buttons')
     
-    buttonDel.classList.add('btn', 'delete-btn')
+    buttonDel.classList.add('btn', 'delete-btn', 'data-idx')
     buttonDel.addEventListener('click', (e)=> {
+        console.log(library[e.target.dataset.idx].read)
+        library[e.target.dataset.idx] = ''
         e.target.parentNode.parentNode.parentNode.remove()
     })
     buttonDel.textContent = 'Delete'
-    buttonRead.classList.add('btn', 'read-btn')
-    buttonRead.textContent = 'Read'
     
+    buttonRead.classList.add('btn', 'read-btn')
+    if(obj.read == true) {
+        buttonRead.textContent = 'Unread'
+    } else {
+        buttonRead.textContent = 'Read'
+    }
+    buttonRead.addEventListener('click', (e)=>{
+        if(library[e.target.dataset.idx].read == false) {
+            e.target.textContent = 'Unread'
+            library[e.target.dataset.idx].read = true
+        } else {
+            e.target.textContent = 'Read'
+            library[e.target.dataset.idx].read = false
+        }
+    })
+
+    if(dataNum == 0){
+        buttonDel.dataset.idx = 0
+        buttonRead.dataset.idx = 0
+    } else {
+        buttonDel.dataset.idx = dataNum
+        buttonRead.dataset.idx = dataNum
+    }
+
     authorTitleDiv.append(titleH2, authorH3)
     pagesDiv.appendChild(pagesP)
     buttonsDiv.append(buttonDel, buttonRead)
@@ -115,6 +141,9 @@ function loadBooks(obj) {
 
     bookDiv.append(authorTitleDiv, buttonsPagesDiv)
     bookCards.append(bookDiv)
+    dataNum++
 }
+
+
 
 
