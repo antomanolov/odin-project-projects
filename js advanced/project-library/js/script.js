@@ -7,6 +7,7 @@ function Book(title, author, pages, read) {
 
 }
 let library = [];
+const bookCards = document.querySelector('.book-cards')
 
 const bookTitle = document.querySelector('#title');
 const bookAuthor = document.querySelector('#author');
@@ -22,7 +23,7 @@ const addBook = document.querySelector('.add-book img');
 const addForm = document.querySelector('.form');
 const bookForm = document.querySelector('#bookform');
 
-const removeBtn = document.querySelector('.delete-btn');
+
 
 button.addEventListener('click', (e) => {
     e.preventDefault()
@@ -36,34 +37,26 @@ button.addEventListener('click', (e) => {
         bookTitle.value = ''
         bookPages.value = ''
     } else {
-        if(!bookTitle.value){
+        if (!bookTitle.value) {
             bookTitleErr.textContent = 'Please enter a title'
             bookTitleErr.style.display = 'block'
         } else {
             bookTitleErr.style.display = 'none'
         }
-        if(!bookAuthor.value) {
+        if (!bookAuthor.value) {
             bookAuthorErr.textContent = 'Please enter an author'
             bookAuthorErr.style.display = 'block'
         } else {
             bookAuthorErr.style.display = 'none'
         }
-        if(!bookPages.value) {
+        if (!bookPages.value) {
             bookPagesErr.textContent = 'Please enter number of pages'
             bookPagesErr.style.display = 'block'
-        }else {
+        } else {
             bookPagesErr.style.display = 'none'
         }
     }
 })
-
-if (removeBtn) {
-    removeBtn.addEventListener('click', (e) => {
-        e.target.parentNode.parentNode.parentNode.remove()
-
-    })
-}
-
 
 addBook.addEventListener('click', () => {
     if (addBook.classList.contains('active')) {
@@ -79,12 +72,12 @@ addBook.addEventListener('click', () => {
 function makeBook(title, author, pages, isRead) {
     let book = new Book(title, author, pages, isRead)
     library.push(book)
-    loadBooks()
+    loadBooks(book)
 }
 
-function loadBooks() {
+function loadBooks(obj) {
     let bookDiv = document.createElement('div')
-    
+
     let authorTitleDiv = document.createElement('div')
     let titleH2 = document.createElement('h2')
     let authorH3 = document.createElement('h3')
@@ -97,7 +90,31 @@ function loadBooks() {
     let buttonRead = document.createElement('button')
 
     bookDiv.classList.add('book')
+    
+    authorTitleDiv.classList.add('author-title')
+    titleH2.textContent = obj.title
+    authorH3.textContent = obj.author
+    
+    buttonsPagesDiv.classList.add('buttons-pages')
+    pagesDiv.classList.add('pages')
+    pagesP.textContent = `Pages: ${obj.pages}`
+    buttonsDiv.classList.add('buttons')
+    
+    buttonDel.classList.add('btn', 'delete-btn')
+    buttonDel.addEventListener('click', (e)=> {
+        e.target.parentNode.parentNode.parentNode.remove()
+    })
+    buttonDel.textContent = 'Delete'
+    buttonRead.classList.add('btn', 'read-btn')
+    buttonRead.textContent = 'Read'
+    
+    authorTitleDiv.append(titleH2, authorH3)
+    pagesDiv.appendChild(pagesP)
+    buttonsDiv.append(buttonDel, buttonRead)
+    buttonsPagesDiv.append(pagesDiv, buttonsDiv)
 
+    bookDiv.append(authorTitleDiv, buttonsPagesDiv)
+    bookCards.append(bookDiv)
 }
 
 

@@ -104,10 +104,11 @@ body {
 }
 
 .book {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    width: 25rem;
-    height: 10rem;
+    width: 27rem;
+    height: 12rem;
     border-radius: 5px;
     background-color: lightgray;
 }
@@ -145,7 +146,7 @@ body {
 
 .pages {
     position: relative;
-    top: -7rem;
+    bottom: 3.9rem;
     left: 18rem;
     color: gray;
 }
