@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <title>To Do App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Florist's to-do list</h1>
+        <div class="add">+</div>
+        <div class="container-inner">
+            
+            <div class="middle">
+               
+                <div class="left">
+                    
+                    <div class="todos">
+                        <h1 class="h1-todos">// TODOs</h1>
+                        <div class="todo-projects"></div>
+                    </div>
+                    <div class="notes">
+                        <h1 class="h1-notes"># Notes</h1>
+                        <div class="notes-projects"></div>
+                    </div>
+                    
+                </div>
+                
+                <div class="right">
+                    <button class="expand"><i class="fi fi-rs-angle-small-up"></i></button>
+                </div>
+                    
+            </div>
+            <div class="flower1">
+                <img src="../img/form-imgs/linden.png" alt="">
+            </div>
+        
+            <div class="flower2">
+                <img src="../img/form-imgs/linden.png" alt="">
+            </div>
+
+            <div class="flower3">
+                <img src="../img/form-imgs/linden.png" alt="">
+            </div>
+
+            <div class="flower4">
+                <img src="../img/form-imgs/linden.png" alt="">
+            </div>
+        </div>
+        <div class="form-modal hidden">
+            <h1>Add your ideas</h1>
+            <form id="add-form">
+                <div class="add-project hidden">
+                    <div class="select-type">
+                        <label for="type">Select type</label>
+                        <select name="type" id="type">
+                            <option value="todo">TODO</option>
+                            <option value="notes">Notes</option>
+                        </select>
+                    </div>
+                    <div class="project-name-div">
+                        <label for="project1">Project Name</label>
+                        <input type="text" name="project1" id="project1">
+                    </div>
+                </div>
+                
+                <div class="add-task">
+                    <div class="selects">
+                        <div class="task-name">
+                            <label for="task-name">Task Name</label>
+                            <input type="text" name="task-name" id="task-name">
+                        </div>
+                        <div class="select-projects">
+                            <label for="project2">Project Name</label>
+                            <select name="project2" id="project2">
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div class="task-description">
+                        <label for="task">Description</label>
+                        <textarea name="task" id="task" cols="55" rows="15" maxlength="780"></textarea>
+                    </div>
+                </div>
+                <button type="submit" id="submit-btn" class="hidden">Add</button>
+            </form>
+            <div class="choose hidden">
+                <button class="add-project-btn">+Add new project</button>
+                <button class="add-task-btn">+Add note or TODO</button>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

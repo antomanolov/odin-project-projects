@@ -1,0 +1,267 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    list-style: none;
+}
+@font-face {
+    font-family: 'Hobbiton';
+    src: url('../fonts/Spirax-Regular.ttf') format('truetype');
+}
+
+body {
+   background-image: url('../img/form-imgs/background.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    top: 5%;
+    font-size: 4rem;
+    font-family: 'Hobbiton';
+    color: #7D9A41;
+    
+}
+
+.container {
+    width: 60%;
+    height: 64rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    transition: width 0.5s ease-in-out;
+}
+
+/* corner flowers */
+.container-inner {
+    width: 95%;
+    position: relative;
+    height: 85vh;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.flower1,
+.flower2,
+.flower3, 
+.flower4 {
+    position: absolute;
+    width: 9.5rem;
+    z-index: 1;
+}
+
+.flower1 {
+    top: 0;
+    left: 2rem;
+    transform: rotate(45deg);
+}
+
+.flower2 {
+    top:0;
+    right: 2rem;
+    transform: scaleX(-1) rotate(45deg);
+}
+
+.flower3 {
+    bottom: 0;
+    left: 2rem;
+    transform: scaleX(-1) rotate(-135deg);
+}
+
+.flower4{
+    bottom: 0;
+    right: 2rem;
+    transform: rotate(-135deg);
+}
+
+.flower1 img,
+.flower2 img,
+.flower3 img,
+.flower4 img{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+/* todos */
+.middle {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: #f2faee;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    width: 100%;
+    height: 32rem;
+    z-index: 998;
+    margin: 0 auto;
+    align-self: center;
+    transition: height 0.5s ease-in-out;
+}
+/* left part of middle */
+.left{
+    display: grid;
+    
+}
+
+.left .todos,
+.left .notes {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.add {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    background-color: #7D9A41;
+    left: 48%;
+    top: 15%;
+    border-radius: 50%;
+    font-size: 6rem;
+    z-index: 999;
+    transition: left 0.6s ease-in-out, top 0.6s ease-in-out;
+    
+}
+.add:hover {
+    background-color: #A5B66C;
+}
+
+/* right part of middle */
+.right {
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #7D9A41;
+    position: relative;
+}
+
+
+
+i {
+    color: #7D9A41;
+    font-size: 4rem;
+}
+
+i:hover {
+    color: #A5B66C;
+}
+
+.expand {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+/* form modal */
+
+.form-modal {
+    background-color: rgba(125, 154, 65, 0.5);
+    width: 40rem;
+    height: 20rem;
+    top: 30%;
+    right: 30%;
+    z-index: 999;
+    position: absolute;
+    display: none;
+    transition: top 1s ease-in;
+}
+
+.form-modal h1{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.selects {
+    padding: 0 10px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    display: flex;
+    gap: 4rem;
+}
+
+label,
+input {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-name-div{
+    margin-top: 1rem;
+}
+
+select {
+    height: 2rem;
+    width: 10rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.task-description {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.task-description label {
+    margin-left: 1rem;
+}
+
+textarea {
+   margin-top: 0.5rem;
+    max-width: 90%;
+    max-height: 180px;
+}
+
+.add-task {
+    margin-top: 4rem;
+    display: none;
+}
+
+.add-project {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    display: none;
+}
+
+.choose {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.choose button {
+    padding: 1.7rem;
+    width: fit-content;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#submit-btn{
+    margin-left: 17rem;
+    margin-top: 2rem;
+    background-color: #A5B66C;
+    width: fit-content;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: none;
+}
