@@ -1,3 +1,38 @@
-body {
-    background-color: blue;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
 }
+
+body {
+    background-image: url('../img/night-landscape-with-lake-mountains-trees-coast-vector-cartoon-illustration-nature-scene-with-conife/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-size: 5rem;
+    margin-left: 1rem;
+}
+
+
+.header-container input {
+    text-align: center;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+.search-bar {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
