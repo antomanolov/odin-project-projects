@@ -21,7 +21,7 @@ body {
 }
 
 .title {
-    font-size: 8rem;
+    font-size: 6rem;
     margin-left: 1rem;
     
 }
@@ -34,8 +34,18 @@ body {
     border: 1px solid white;
     height: 3rem;
     border-radius: 5px;
+    
 }
 
+.middle {
+    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.6) 50%, transparent 100%);
+    display: inline-block;
+    width: 80%;
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 2rem;
+}
 .search-bar {
     margin-top: 1rem;
     margin-left: 2rem;
@@ -75,4 +85,34 @@ body {
 
 .forecast-container:last-child {
     margin-right: 2rem;
+    
+}
+
+.forecast {
+    background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.6) 50%, transparent 100%);
+}
+
+.day-of-the-week {
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.main-day {
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.error {
+    background-color: red;
+    width: fit-content;
+    font-size: 1.2rem;
+    width: 310px;
+    border-end-start-radius: 2px;
+}
+
+.visible {
+    display: none;
 }

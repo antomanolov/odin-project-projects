@@ -8,67 +8,44 @@
 </head>
 
 <body>
+    
     <div class="header-container">
         <h1 class="title">the weather app</h1>
         <div class="search-bar">
             <form class="search-form">
-                <input type="search" name="" id="" placeholder="Enter the city here">
+                <input type="search" name="" id="" placeholder="Enter the city here" spellcheck="false">
+                <div class="error"></div>
             </form>
         </div>
     </div>
-    <h1 class="city-name"></h1>
-    <div class="location-current-container">
-        
-        <div class="location-details">
-            <div class="weather-icon">
-                <p class="weather-type"></p>
-                <img src="" alt="weather-icon" width="100" class="main-weather-img">
-            </div>
-            <p class="current-time">Current-time 0:21:22</p>
+    <div class="visible">
+        <div class="middle">
+            <h1 class="city-name"></h1>
+            <div class="location-current-container">
             
-        </div>
-        <div class="current-details">
-            <p class="real-temp">Real temp:</p>
-            <p class="feels-like">Feels like: </p>
-            <p class="wind-speed">Wind km/h: </p>
-            <p class="humidity">Humidity: </p>
-        </div>
-    </div>
-    
-    <div class="forecast">
-        <div class="forecast-container">
-            
-            <div class="forecast date-1">
-                <p>Date</p>
+            <div class="location-details">
+                <p class="main-day"></p>
                 <div class="weather-icon">
                     <p class="weather-type"></p>
-                    <img src="" alt="weather-icon" width="100">
+                    <img src="" alt="weather-icon" width="100" class="main-weather-img">
                 </div>
-                <div class="max-min-temp">
-                    <p>Max Temperature</p>
-                    <p>Min Temperature</p>
-                </div>
+                <p class="current-time">Current-time 0:21:22</p>
+                
             </div>
-            <div class="forecast date-2"> 
-                <p>Date</p>
-                <div class="weather-icon">
-                    <p>Cloudy</p>
-                    <img src="" alt="weather-icon" width="100">
-                </div>
-                <div class="max-min-temp">
-                    <p>Max Temperature</p>
-                    <p>Min Temperature</p>
-                </div>
+            <div class="current-details">
+                <p class="real-temp">Real temp:</p>
+                <p class="feels-like">Feels like: </p>
+                <p class="wind-speed">Wind km/h: </p>
+                <p class="humidity">Humidity: </p>
             </div>
-            <div class="forecast date-3"> <p>Date</p>
-                <div class="weather-icon">
-                    <p>Cloudy</p>
-                    <img src="" alt="weather-icon" width="100">
-                </div>
-                <div class="max-min-temp">
-                    <p>Max Temperature</p>
-                    <p>Min Temperature</p>
-                </div>
+            </div>
+        </div>
+        
+        
+        <div class="forecast">
+            <div class="forecast-container">
+                
+                
             </div>
         </div>
     </div>
