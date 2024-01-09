@@ -10,6 +10,10 @@
     color: white;
 }
 
+p {
+    font-size: 1.8rem;
+}
+
 body {
     background-image: url('../img/night-landscape-with-lake-mountains-trees-coast-vector-cartoon-illustration-nature-scene-with-conife/background.jpg');
     background-size: cover;
@@ -17,8 +21,9 @@ body {
 }
 
 .title {
-    font-size: 5rem;
+    font-size: 8rem;
     margin-left: 1rem;
+    
 }
 
 
@@ -36,3 +41,38 @@ body {
     margin-left: 2rem;
 }
 
+/* location and current details */
+.city-name {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.weather-icon {
+    display: flex;
+    align-items: center;
+}
+
+.location-current-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+.current-details {
+    margin-top: 2rem;
+}
+
+/* forecast */
+
+.forecast-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.forecast-container:last-child {
+    margin-right: 2rem;
+}
